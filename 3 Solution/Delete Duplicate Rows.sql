@@ -3,6 +3,7 @@ Delete Duplicate Rows
 Keep Lowest id, delete rest
 
 JOIN APPROACH
+
 DELETE u1
 FROM users u1
 JOIN users u2
