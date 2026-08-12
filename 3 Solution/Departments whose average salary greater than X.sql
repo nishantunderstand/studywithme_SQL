@@ -1,4 +1,24 @@
-Departments whose average salary > X
+-- Date: Jul 30, 2026 | Time: 6:53:22 PM | MYSQL 8.0+
+-- SQL Question : Departments whose average salary > X
+
+/* Possible Approaches : 
+
+
+
+*/
+
+
+SELECT * from employee;
+
+
+SELECT dept ,AVG(salary) AS avg_salary
+from employee 
+GROUP BY dept
+HAVING AVG(salary)>10000;
+
+
+-- Window Function TODO : Thursday, July 30, 2026 7:00:50 PM
+
 
 select distinct dept 
 from
@@ -10,9 +30,11 @@ from
 ) x
 where dep_avg_sal>given_amount_question
 
----
 
-select dept from
-employee
-group by dept
-having AVG(salary) >x;
+
+
+SELECT * FROM (SELECT *, DENSE_RANK() OVER(salary ORDER BY DESC) AS avg_salary FROM employee) t WHERE avg_salary>10000;
+
+
+
+

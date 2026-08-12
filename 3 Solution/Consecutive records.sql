@@ -10,4 +10,5 @@ Our Goal is to compare to items
 */
 
 
-SELECT * FROM users;
+SELECT *, LAG(email) OVER(ORDER BY id) FROM users;
+SELECT *, LEAD(email) OVER(ORDER BY id) FROM users;

@@ -1,4 +1,4 @@
--- Date: Jul 30, 2026 Time: 4:13:45 PM MYSQL 8.0+
+n-- Date: Jul 30, 2026 Time: 4:13:45 PM MYSQL 8.0+
 -- SQL Question : Top 3 salaries by department
 
 /* Possible Approaches : 
