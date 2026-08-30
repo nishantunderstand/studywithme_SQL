@@ -8,7 +8,7 @@
 */
 
 
-SELECT * from employee;
+SELECT * from employee; 
 
 
 SELECT dept ,AVG(salary) AS avg_salary

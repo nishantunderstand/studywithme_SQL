@@ -14,3 +14,16 @@ DELETE u1 FROM users u1
 JOIN users u2
 ON u1.email = u2.email
 AND u1.id>u2.id
+
+
+---
+
+-- Find Duplicate name
+SELECT 
+employee_name
+FROM employee
+GROUP BY employee_name
+HAVING COUNT(*)>1;
+
+
+

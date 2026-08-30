@@ -1,0 +1,8 @@
+DELIMITER //
+
+CREATE PROCEDURE getAllEmployee2()
+BEGIN
+    SELECT * FROM employee2026;
+END //
+
+DELIMITER ;

@@ -12,3 +12,10 @@ Our Goal is to compare to items
 
 SELECT *, LAG(email) OVER(ORDER BY id) FROM users;
 SELECT *, LEAD(email) OVER(ORDER BY id) FROM users;
+
+
+SELECT 
+*,
+LAG(salary) OVER(ORDER BY employee_id) AS previous_salary,
+salary - LAG(salary) OVER(ORDER BY employee_id) AS salary_difference
+FROM employee;
