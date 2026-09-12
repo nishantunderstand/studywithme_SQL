@@ -1,4 +1,4 @@
-1. Find Duplicate Records 
+1.1 Find Duplicate Records 
 1.2 Consecutive records 
 1.3 Delete Duplicate Rows
 2. Departments whose average salary greater than X
@@ -14,19 +14,4 @@
 9.3 Find departments having more than 3 and an average salary greater than 70,000.
 10. Top salary employee per department
 11. Display the name of each manager and the name of the employees working under that manager.
-
-
-
-12. Employees with no manager
-13. Managers who have no employees
-14. Employees earning more than their manager
-15. Employees earning the same salary
-16. Department with highest total salary
-17. Department with the most employees
-18. Employees in the highest-salary department
-19. Second-highest salary in each department
-21. Highest salary and lowest salary in each department
-23. Salary rank within department
-24. Find employees whose salary is the 2nd highest in their department
-26. Employees not belonging to any department
-29. Employees hired in the same month
+12 . Find employees earning more than their manager.
