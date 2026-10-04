@@ -16,7 +16,7 @@ GROUP BY
 
 -- Step 2: Find the maximum average
 
--- Derived Table Or Inline table 
+-- Derived Table Or Inline table | VALID ANSWER 
 
 SELECT MAX(avg_salary) FROM 
 (
@@ -30,9 +30,32 @@ GROUP BY
 ) t;
 
 
--- SELECT * FROM employee;
--- 
--- 
--- SELECT e.dept_id FROM employee e
--- GROUP BY e.dept_id
--- HAVING e.salary > AVG(salary); 
+
+
+SELECT 
+	dept_id,
+	AVG(salary) AS avg_salary
+FROM employee
+GROUP BY dept_id
+ORDER BY avg_salary DESC
+LIMIT 1;
+
+
+
+
+
+
+SELECT 
+	dept_id,
+	AVG(salary)  -- AVG(salary) IS THE NEW COLUMN NAME
+FROM employee
+GROUP BY dept_id
+ORDER BY AVG(salary) DESC
+LIMIT 1;
+
+
+
+
+
+
+

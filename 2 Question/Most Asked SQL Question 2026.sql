@@ -14,19 +14,28 @@ Most Asked SQL Query Questions
 11. Find the second highest salary in each department.
 12. Find employees who joined in the last 30 days. | Prartice it 
 15. Find duplicate salaries.
-
-
-----
-
-
 17. Find the department with the highest average salary.
 18. Find employees having the same department and salary.
-19. Find consecutive/continuous records.
-20. Find missing IDs/numbers.
-21. Find the latest record for each employee.
-22. Find the second latest record for each employee.
+
+
+
+
+Table : employee 
+employee_id	int
+employee_name	varchar(100)
+salary	int
+dept_id	int
+manager_id	int
+joining_date	date
+
+
+
 
 ----
+
+
+21. Find the latest record for each employee.
+22. Find the second latest record for each employee.
 
 23. Find employees who never received a bonus.
 24. Find customers who placed more than 3 orders.
@@ -36,3 +45,5 @@ Most Asked SQL Query Questions
 28. Find the second-highest selling product.
 29. Find running total of sales.
 30. Find monthly sales and month-over-month growth.
+19. Find consecutive/continuous records.
+20. Find missing IDs/numbers.
