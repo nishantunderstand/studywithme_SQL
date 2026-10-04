@@ -149,18 +149,22 @@ INSERT INTO sql_pratice_2026.employee (employee_id, employee_name, salary, dept_
 ---
 
 
-CREATE TABLE department (
-    dept_id INT PRIMARY KEY AUTO_INCREMENT,
-    dept_name VARCHAR(100) NOT NULL,
-    email VARCHAR(100)
-);
 
+ALTER TABLE employee
+ADD joining_date DATE;
 
-INSERT INTO department
-(dept_id, dept_name, email)
+INSERT INTO employee
+(employee_id, employee_name, salary, dept_id, manager_id, joining_date)
 VALUES
-(1, 'IT', 'it@company.com'),
-(2, 'HR', 'hr@company.com'),
-(3, 'Finance', 'finance@company.com'),
-(4, 'Sales', 'sales@company.com'),
-(5, 'Marketing', 'marketing@company.com');
+(200, 'John',    90000, 1, NULL, '2026-01-10'),
+(201, 'Alice',   85000, 1, 200,  '2026-08-15'),
+(202, 'Bob',     75000, 2, NULL, '2026-09-01'),
+(203, 'Charlie', 70000, 2, 202,  '2026-09-05'),
+(204, 'David',   65000, 2, 202,  '2026-09-20'),
+(205, 'Emma',    95000, 3, NULL, '2026-09-25'),
+(206, 'Frank',   80000, 3, 205,  '2026-09-28'),
+(207, 'Grace',   60000, 3, 205,  '2026-10-01'),
+(208, 'Henry',   55000, 4, NULL, '2026-10-02'),
+(209, 'Ivy',     50000, 4, 208,  '2026-10-03');
+
+
