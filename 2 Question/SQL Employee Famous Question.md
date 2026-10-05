@@ -58,3 +58,39 @@ DUPLICATES
  ├── Find duplicates
  └── Delete duplicates
 ```
+
+
+### Create And Pratice it.
+
+
+```sql
+CREATE DATABASE IF NOT EXISTS sql_pratice_2026;
+USE sql_pratice_2026;
+
+DROP TABLE IF EXISTS employee;
+
+CREATE TABLE employee (
+    employee_id INT PRIMARY KEY,
+    employee_name VARCHAR(100),
+    salary INT,
+    dept_id INT,
+    manager_id INT,
+    joining_date DATE
+);
+
+INSERT INTO employee
+(employee_id, employee_name, salary, dept_id, manager_id, joining_date)
+VALUES
+(1,  'Amit',    100000, 10, NULL, '2020-01-10'),
+(2,  'Rahul',    80000, 10, 1,    '2021-03-15'),
+(3,  'Priya',    80000, 10, 1,    '2022-06-20'),
+(4,  'Neha',     70000, 20, NULL, '2020-05-12'),
+(5,  'Vikas',    60000, 20, 4,    '2023-02-10'),
+(6,  'Sneha',    50000, 20, 4,    '2024-01-05'),
+(7,  'Arjun',    90000, 30, NULL, '2021-07-18'),
+(8,  'Karan',    75000, 30, 7,    '2025-09-10'),
+(9,  'Pooja',    75000, 30, 7,    '2026-09-20'),
+(10, 'Amit',     60000, 20, 4,    '2026-09-25');
+
+
+```
