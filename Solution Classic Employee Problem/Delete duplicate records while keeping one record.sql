@@ -16,4 +16,8 @@ SELECT dept_id,COUNT(*) AS cnt FROM employee GROUP BY dept_id HAVING COUNT(*)>1;
 -- 🚫 DELETE FROM employee WHERE dept_id IN (SELECT MIN(dept_id) FROM employee GROUP BY dept_id HAVING COUNT(*)>1);
 
 
-DELETE FROM employee 
+
+-- USE RANK Much Better And HOW ?
+
+GROUP BY dept 
+Order IDK 

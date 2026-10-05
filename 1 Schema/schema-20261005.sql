@@ -145,3 +145,38 @@ INSERT INTO sql_pratice_2026.employee (employee_id, employee_name, salary, dept_
 INSERT INTO sql_pratice_2026.employee (employee_id, employee_name, salary, dept_id, manager_id, joining_date) VALUES(207, 'Grace', 60000, 3, 205, '2026-10-01');
 INSERT INTO sql_pratice_2026.employee (employee_id, employee_name, salary, dept_id, manager_id, joining_date) VALUES(208, 'Henry', 55000, 4, NULL, '2026-10-02');
 INSERT INTO sql_pratice_2026.employee (employee_id, employee_name, salary, dept_id, manager_id, joining_date) VALUES(209, 'Ivy', 50000, 4, 208, '2026-10-03');
+
+
+
+
+
+
+INSERT INTO employee
+(employee_id, employee_name, salary, dept_id, manager_id, joining_date)
+VALUES
+(219, 'Kunal', 95000, 7, NULL, '2026-01-05'),
+(220, 'Neha', 85000, 7, 219, '2026-02-10'),
+(221, 'Raj', 120000, 8, NULL, '2026-04-20'),
+(222, 'Vivek', 90000, 8, 221, '2026-03-15'),
+(223, 'Amit', 110000, 9, NULL, '2026-04-01'),
+(224, 'Pooja', 75000, 9, 223, '2026-05-01'),
+(225, 'Rahul', 80000, 10, 128, '2026-06-15'),
+(226, 'Sneha', 80000, 10, 128, '2026-07-20'),
+(227, 'John', 70000, 1, 1, '2026-08-01'),
+(228, 'John', 70000, 1, 1, '2026-08-01');
+
+
+
+INSERT INTO employee
+(employee_id, employee_name, salary, dept_id, manager_id, joining_date)
+VALUES
+(229, 'Aarav', 85000, 11, NULL, '2026-01-10'),
+(230, 'Riya', 75000, 11, 229, '2026-01-05'),
+(231, 'Mohit', 80000, 11, 229, '2026-02-15'),
+(232, 'Simran', 90000, 12, NULL, '2026-03-20'),
+(233, 'Karan', 70000, 12, 232, '2026-03-10'),
+(234, 'Anjali', 72000, 12, 232, '2026-04-01'),
+(235, 'Dev', 95000, 13, NULL, '2026-05-15'),
+(236, 'Isha', 78000, 13, 235, '2026-06-01'),
+(237, 'Manish', 82000, 13, 235, '2026-05-01'),
+(238, 'Tanya', 88000, 14, NULL, '2026-07-10');

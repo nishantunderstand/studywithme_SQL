@@ -19,3 +19,13 @@ SQL Execution Order
 8.  DISTINCT
 9.  ORDER BY
 10. LIMIT / OFFSET
+
+
+---
+
+
+<>  → avoids self-pair
+<   → avoids self-pair + reverse duplicate
+
+< or >  → Keep only ONE direction of the pair
+<>      → Keeps BOTH directions

@@ -41,10 +41,6 @@ ORDER BY avg_salary DESC
 LIMIT 1;
 
 
-
-
-
-
 SELECT 
 	dept_id,
 	AVG(salary)  -- AVG(salary) IS THE NEW COLUMN NAME
@@ -52,6 +48,50 @@ FROM employee
 GROUP BY dept_id
 ORDER BY AVG(salary) DESC
 LIMIT 1;
+
+
+
+
+-- RANK BASED APPROACH
+
+-- What is the issue with this code ?
+-- 🚫  SELECT * 
+-- FROM (	
+-- 	SELECT 
+-- 		e.dept_id,
+-- 		AVG(e.salary) AS avg_salary,
+-- 		DENSE_RANK() OVER(ORDER BY avg_salay DESC) AS rnk
+-- 		FROM employee e
+-- 		GROUP BY e.dept_id
+-- ) x
+-- 🚫  WHERE rnk=1;
+
+
+
+
+SELECT * 
+FROM (	
+	SELECT 
+		e.dept_id,
+		AVG(e.salary) AS avg_salary,
+		DENSE_RANK() OVER(ORDER BY AVG(e.salary) DESC) AS rnk
+		FROM employee e
+		GROUP BY e.dept_id
+) x
+WHERE rnk=1;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
